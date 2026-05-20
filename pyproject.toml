@@ -18,4 +18,4 @@ dependencies = [
 ]
 
 [tool.uv.sources]
-axengine = { path = "../../TTS_axera_test/axengine-0.1.3-py3-none-any.whl" }
+axengine = { path = "./axengine-0.1.3-py3-none-any.whl" }

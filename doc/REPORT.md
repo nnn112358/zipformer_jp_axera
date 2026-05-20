@@ -1,8 +1,15 @@
-# 日本語 ASR モデルを AX650N NPU で動かすまで:変換パイプラインの解説
+# 日本語 ASR モデルを AX650N NPU で動かすまで
 
 **対象モデル**: `reazon-research/japanese-zipformer-base-k2-rs35kh`(CTC 日本語 ASR、Zipformer2 アーキテクチャ)
 **ターゲットハードウェア**: AX650N PCIe ボード(AXera-tech)
 **達成性能**: 推論 71.5ms / RTF 0.0071(リアルタイムの 138 倍速、CPU 比 4.4 倍速)
+
+このドキュメントは全体俯瞰。詳細は以下を参照:
+- [PIPELINE.md](PIPELINE.md) — 各変換ステップの実装詳細
+- [QUANTIZATION.md](QUANTIZATION.md) — 量子化の仕組みと精度
+- [TROUBLESHOOTING.md](TROUBLESHOOTING.md) — 遭遇した 7 つのエラー対応
+- [BENCHMARK.md](BENCHMARK.md) — 性能評価の詳細
+- [GLOSSARY.md](GLOSSARY.md) — 用語集
 
 ---
 

@@ -1,0 +1,34 @@
+# Python / uv
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+.venv/
+.python-version
+
+# 大きなモデル(再生成可能、サイズ理由で除外)
+*.onnx
+*.onnx.data
+*.axmodel
+
+# pulsar2 build / run 出力
+output_u16/
+output_u16_min/
+output_v4/
+output*/
+_step*.onnx
+_probe*.onnx
+_fold_tmp*
+_bench_out/
+axrun_output/
+axrun_input/
+axrun_input.list
+
+# キャリブレーション中間 (再生成可能)
+calibrations/input_values/
+calibrations/*.tar.gz
+
+# 一時音声
+/tmp/*.wav
